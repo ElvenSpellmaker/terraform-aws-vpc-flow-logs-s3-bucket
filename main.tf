@@ -198,8 +198,7 @@ module "kms_key" {
 }
 
 module "s3_log_storage_bucket" {
-  source  = "cloudposse/s3-log-storage/aws"
-  version = "1.4.3"
+  source  = "git::https://github.com/ElvenSpellmaker/terraform-aws-s3-log-storage?ref=fix/1.4.3"
 
   bucket_name = local.bucket_name
 
